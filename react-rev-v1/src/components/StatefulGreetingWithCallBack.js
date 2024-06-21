@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 
-class StatefulGreetingOne extends Component{
+class StatefulGreetingWithCallBack extends Component{
     constructor(props){
         super(props)
         this.state = {
@@ -13,9 +13,11 @@ class StatefulGreetingOne extends Component{
         this.setState({
             introduction : 'GoodBye!',
             buttonText: 'Enter',
+        }, ()=>{
+            // IMP: ALWAYS USE THIS CALLBACK FUNCTION after this.setState, when you need to do something after updating the states so we have latest states values to work with
+            console.log(this.state.introduction)
+            console.log(this.state.buttonText)
         });
-        console.log(this.state.introduction) // OLD VALUES, see this.setState is ASYNCHORNOUS section in readme, SOLUTION IS IN StatefulGreetingWithCallBack.js
-        console.log(this.state.buttonText) // OLD STATE VALUE, see this.setState is ASYNCHORNOUS section in readme, StatefulGreetingWithCallBack.js
     }
     render(){
         return(
@@ -27,4 +29,4 @@ class StatefulGreetingOne extends Component{
     }
 }
 
-export default StatefulGreetingOne;
+export default StatefulGreetingWithCallBack;

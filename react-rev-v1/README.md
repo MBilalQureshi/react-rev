@@ -31,6 +31,8 @@ https://articles.wesionary.team/react-functional-components-vs-class-components-
     - Exmaple we had onClick attribute to a button
     - We'll write and event handler to listen for the click event
     - Use setState() in the event handler to update the state
+- this.setState is ASYNCHORNOUS, meaning it execute in background while other code is executing in the forground
+- ALWAYS USE THIS CALLBACK FUNCTION after this.setState, when you need to do something after updating the states so we have latest states values to work with
 3. React Hooks(Mostly used)
 - Built in react function which can be added to a stateless functional component, allowing them to behave like stateful class components.
 - Accomplish more will less code.
