@@ -11,18 +11,28 @@ class StatefulGreetingWithPrevState extends Component{
     }
 
     handleClick = () => {
-        this.setState({
-            introduction : this.state.introduction === 'Hello!' ? 'GoodBye!' : 'Hello!' ,
-            buttonText: this.state.buttonText === 'Exit' ? 'Enter': 'Exit'
-        }, ()=>{
-            console.log(this.state.introduction)
-            console.log(this.state.buttonText)
+        this.setState((prevState, prevProps)=>{
+            // introduction : this.state.introduction === 'Hello!' ? 'GoodBye!' : 'Hello!' ,
+            // buttonText: this.state.buttonText === 'Exit' ? 'Enter': 'Exit'
+            // USE PREV STATE AND PROPS HERE INSTEAD OF this.state.introduction
+            console.log('PrevState',prevState)
+            console.log('PrevProps',prevProps)
+            return{
+                introduction : prevState.introduction === 'Hello!' ? 'GoodBye!' : 'Hello!' ,
+                buttonText: prevState.buttonText === 'Exit' ? 'Enter': 'Exit' 
+            }
         });
     }
 
     handleIncrement = () =>{
-        this.setState({
-            count: this.state.count + 1,
+        this.setState((prevState, prevProps)=>{
+            console.log('PrevState',prevState)
+            console.log('PrevProps',prevProps)
+            //we'll use return here , it's normal in arrow function don't forget
+            return{
+                // count: this.state.count + 1,
+                count: prevState.count + 1
+            }
         })
     }
     
