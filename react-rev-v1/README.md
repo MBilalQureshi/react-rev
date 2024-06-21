@@ -23,6 +23,14 @@ https://articles.wesionary.team/react-functional-components-vs-class-components-
     - These properties are maintained in state object
     - state updated on user interaction
     - Can take props that can't be changed however states can be changed
+- How to fetch a prop ?
+    - {this.props.propName}
+- How to fetch a state ?
+    - {this.state.stateName}
+- How to update the state ?(3 steps)
+    - Exmaple we had onClick attribute to a button
+    - We'll write and event handler to listen for the click event
+    - Use setState() in the event handler to update the state
 3. React Hooks(Mostly used)
 - Built in react function which can be added to a stateless functional component, allowing them to behave like stateful class components.
 - Accomplish more will less code.
