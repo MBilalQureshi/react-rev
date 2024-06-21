@@ -6,9 +6,9 @@ import StatefulGreeting from './components/StatefulGreeting';
 function App() {
   return (
     <div className="App">
-      {/* <FunctionalGreeting name="Bilal"/> */}
+      <FunctionalGreeting name="Bilal"/>
       {/* <StatefulGreeting name="Bilal"/> */}
-      <HooksCounter name="Bilal"/>
+      {/* <HooksCounter name="Bilal"/> */}
     </div>
   );
 }
