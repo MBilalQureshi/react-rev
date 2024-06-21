@@ -11,9 +11,18 @@ https://articles.wesionary.team/react-functional-components-vs-class-components-
 - Because it's just a js function it can take parameters or we can say props.
 - IMPORTANT - Once they are rendered with their props, the output will always remain the same.
 - It's better to use these when there is no interactivity to avoid complexity.
+- what ?
+    - Do not track any internal properties
+    - Always render the same thing
+    - Cannot change unless given new props.
 2. Stateful Class Components
 - IMPORTANT, they have the ability to change, they do this by using "state" which is JS object containing various properties.
 - The initial state is defined in the constructor method. i.e this.state = { count = 0 }
+- What?
+    - Maintain an internal set of properties that describe what they display and how they behave
+    - These properties are maintained in state object
+    - state updated on user interaction
+    - Can take props that can't be changed however states can be changed
 3. React Hooks(Mostly used)
 - Built in react function which can be added to a stateless functional component, allowing them to behave like stateful class components.
 - Accomplish more will less code.
