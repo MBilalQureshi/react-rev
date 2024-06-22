@@ -15,6 +15,9 @@ https://articles.wesionary.team/react-functional-components-vs-class-components-
     - Do not track any internal properties
     - Always render the same thing
     - Cannot change unless given new props.
+- ALWAYS USE THIS CALLBACK FUNCTION after this.setState, when you need to do something after updating the states so we have latest states values to work with
+- Event handler
+    - We define the handler as a method on a class so we don't need function keyword
 2. Stateful Class Components
 - IMPORTANT, they have the ability to change, they do this by using "state" which is JS object containing various properties.
 - The initial state is defined in the constructor method. i.e this.state = { count = 0 }
@@ -32,6 +35,9 @@ https://articles.wesionary.team/react-functional-components-vs-class-components-
     - We'll write and event handler to listen for the click event
     - Use setState() in the event handler to update the state
 - this.setState is ASYNCHORNOUS, meaning it execute in background while other code is executing in the forground
+- Event handler
+    - We define the handler as a method on a class so we don't need function key word
+    - No paranthesis just a function name is written onClick for example. We pass a function itself not a call to a function.
 - ALWAYS USE THIS CALLBACK FUNCTION after this.setState, when you need to do something after updating the states so we have latest states values to work with
 3. React Hooks(Mostly used)
 - Built in react function which can be added to a stateless functional component, allowing them to behave like stateful class components.

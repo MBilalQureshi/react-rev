@@ -1,4 +1,6 @@
 import './App.css';
+import EventClass from './components/EventClass';
+import EventFunctional from './components/EventFunctional';
 import FunctionalGreeting from './components/FunctionalGreeting';
 import HooksCounter from './components/HooksCounter';
 import StatefulGreeting from './components/StatefulGreeting';
@@ -14,7 +16,9 @@ function App() {
       {/* <HooksCounter name="Bilal"/> */}
       {/* <StatefulGreetingOne greeting = "How are you?"/> */}
       {/* <StatefulGreetingWithCallBack greeting = "How are you?"/> */}
-      <StatefulGreetingWithPrevState greeting = "How are you?"/>
+      {/* <StatefulGreetingWithPrevState greeting = "How are you?"/> */}
+      <EventFunctional />
+      <EventClass />
     </div>
   );
 }
