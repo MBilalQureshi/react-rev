@@ -44,3 +44,51 @@ https://articles.wesionary.team/react-functional-components-vs-class-components-
 - Accomplish more will less code.
 - Avoid this keyword.
 - No constructor
+
+## 4 Ways to bind events (IMPORTANT)
+BindingEvents.js
+### Option 1: Define the handler as an arrow function (Primary Choice)
+```
+handleClick = () => { // Arrow Function in method
+       this.setState({
+           ...
+       });
+   }
+```
+
+### Option 2: Use an arrow function in the render method  (Secondary Choice)
+```
+<button onClick = {() => this.handleClick()}> // Arrow Function on event handler attribute
+{this.state.buttonText}
+</button>
+```
+
+- Arrow functions operate within the scope within which they are created e.g. Our React Component
+- Use this option if your event handler requires parameters
+
+### Option 3: Call bind on the handler with ‘this’
+```
+<button onClick = {this.handleClick.bind(this)}> // Use bind method
+{this.state.buttonText}
+</button>
+```
+
+### Option 4: Bind the event handler in the constructor
+```
+constructor(props){ // Within the constructor
+       super(props);
+       this.state = {
+           ...
+       };
+       this.handleClick = this.handleClick.bind(this) // Using bind method
+   }
+
+...
+
+<button onClick = {this.handleClick}> // bind is done in the constructor above
+{this.state.buttonText}
+</button>
+```
+
+- As binding occurs within the constructor, we only have to bind ‘this’ once instead of every time it occurs. 
+- Good for performance in large applications.
