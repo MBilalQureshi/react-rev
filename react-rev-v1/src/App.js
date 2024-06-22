@@ -6,6 +6,7 @@ import EventClass from './components/EventClass';
 import EventFunctional from './components/EventFunctional';
 import FunctionalGreeting from './components/FunctionalGreeting';
 import HooksCounter from './components/HooksCounter';
+import NestingComponents from './components/NestingComponents';
 import StatefulGreeting from './components/StatefulGreeting';
 import StatefulGreetingOne from './components/StatefulGreetingOne';
 import StatefulGreetingWithCallBack from './components/StatefulGreetingWithCallBack';
@@ -17,7 +18,9 @@ function App() {
       {/* <FunctionalGreeting name="Bilal"/> */}
       {/* <StatefulGreeting name="Bilal"/> */}
       {/* <HooksCounter name="Bilal"/> */}
+
       {/* <StatefulGreetingOne greeting = "How are you?"/> */}
+    
       {/* <StatefulGreetingWithCallBack greeting = "How are you?"/> */}
       {/* <StatefulGreetingWithPrevState greeting = "How are you?"/> */}
       
@@ -27,9 +30,11 @@ function App() {
       {/* 4 WAYS TO BIND EVENTS, IMPORTANT */}
       {/* <EventBinding /> */}
 
-      <ConditionalRenderingFunctional connected={true}/>
-      <ConditionalRenderingClass />
+      {/* <ConditionalRenderingFunctional connected={true} /> */}
+      {/* <ConditionalRenderingClass /> */}
 
+      <NestingComponents />
+      
     </div>
   );
 }
