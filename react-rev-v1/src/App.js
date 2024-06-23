@@ -6,6 +6,7 @@ import EventClass from './components/EventClass';
 import EventFunctional from './components/EventFunctional';
 import FunctionalGreeting from './components/FunctionalGreeting';
 import HooksCounter from './components/HooksCounter';
+import MethodsAsPropsParent from './components/MethodsAsPropsParentClass';
 import NestingComponents from './components/NestingComponents';
 import StatefulGreeting from './components/StatefulGreeting';
 import StatefulGreetingOne from './components/StatefulGreetingOne';
@@ -33,8 +34,12 @@ function App() {
       {/* <ConditionalRenderingFunctional connected={true} /> */}
       {/* <ConditionalRenderingClass /> */}
 
-      <NestingComponents />
-      
+      {/* THIS HAS TWO CHILD COMPONENTS, UserData.js and UserMessage.js */}
+      {/* <NestingComponents /> */}
+
+      {/* Get function from parent and use it in functional child and trigger that event in parent */}
+      <MethodsAsPropsParent />
+
     </div>
   );
 }
