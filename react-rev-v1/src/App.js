@@ -8,6 +8,7 @@ import FunctionalGreeting from './components/FunctionalGreeting';
 import HooksCounter from './components/HooksCounter';
 import MethodsAsPropsParent from './components/MethodsAsPropsParentClass';
 import NestingComponents from './components/NestingComponents';
+import RenderingLists from './components/RenderingLists';
 import StatefulGreeting from './components/StatefulGreeting';
 import StatefulGreetingOne from './components/StatefulGreetingOne';
 import StatefulGreetingWithCallBack from './components/StatefulGreetingWithCallBack';
@@ -38,7 +39,10 @@ function App() {
       {/* <NestingComponents /> */}
 
       {/* Get function from parent and use it in functional child and trigger that event in parent */}
-      <MethodsAsPropsParent />
+      {/* <MethodsAsPropsParent /> */}
+
+      {/* Using MAP , keys and indexes(avoid it, x.map((y,index)=>{}))*/}
+      <RenderingLists />
 
     </div>
   );
