@@ -1,5 +1,6 @@
 import './App.css';
 import EventBinding from './components/BindingEvents';
+import Clock from './components/Clock';
 import ConditionalRenderingClass from './components/ConditionalRenderingClass';
 import ConditionalRenderingFunctional from './components/ConditionalRenderingFunctional';
 import EventClass from './components/EventClass';
@@ -42,7 +43,12 @@ function App() {
       {/* <MethodsAsPropsParent /> */}
 
       {/* Using MAP , keys and indexes(avoid it, x.map((y,index)=>{}))*/}
-      <RenderingLists />
+      {/* <RenderingLists /> */}
+
+      {/*IMPORTANT: FOR UNDERSTANDING CYCLE OF componentDidMount, componentDidUpdate, componentWillUnmount */}
+      <Clock />
+
+      
 
     </div>
   );
