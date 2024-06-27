@@ -11,6 +11,11 @@ export class ControlledForm extends Component {
       }
     }
 
+    handleSubmit = (event) => {
+        event.preventDefault();
+        console.log(this.state)
+    }
+
     // IMPORTANT: INSTEAD OF USING THREE HANDLERS IT'S BETTER TO USE "Computer property name instead", see commented code
     handleChange = (event) => {
         const {name, value} = event.target
@@ -43,7 +48,7 @@ export class ControlledForm extends Component {
     return (
       <div>
         <h2>Fill the form</h2>
-        <form>
+        <form onSubmit={this.handleSubmit}>
             <div>
                 <label htmlFor="id-name">Your Name:</label>
                 <input 
