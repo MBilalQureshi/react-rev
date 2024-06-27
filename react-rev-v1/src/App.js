@@ -8,6 +8,7 @@ import EventFunctional from './components/EventFunctional';
 import FunctionalGreeting from './components/FunctionalGreeting';
 import HooksCounter from './components/HooksCounter';
 import LifeCyclesCDM from './components/LifeCyclesCDM';
+import LifeCyclesCDU from './components/LifeCyclesCDU';
 import MethodsAsPropsParent from './components/MethodsAsPropsParentClass';
 import NestingComponents from './components/NestingComponents';
 import RenderingLists from './components/RenderingLists';
@@ -46,6 +47,8 @@ function App() {
       {/* Using MAP , keys and indexes(avoid it, x.map((y,index)=>{}))*/}
       {/* <RenderingLists /> */}
 
+      {/* --------------------------------------------------------------------------------------------------------- */}
+
       {/*IMPORTANT: FOR UNDERSTANDING CYCLE OF componentDidMount, componentDidUpdate, componentWillUnmount */}
       {/* <Clock /> */}
 
@@ -56,10 +59,23 @@ function App() {
 
       3. There are ways to prevent child components from rendering, coming in later task
        */}
-
-      <LifeCyclesCDM />
+      {/* <LifeCyclesCDM /> */}
 
       
+      {/* componentDidMount 
+      1. ComponentDidMount is called on every update, 1.e
+      - change of props
+      - change of state
+      - parent's rerender 
+      
+      2. A child update won't cause the parent to re-render BUT parent's update will re-render all the child , which could slow app down!
+      
+      3. pass prevProps and prevState to componentDidUpdate to make conditional updates
+      */}
+      <LifeCyclesCDU />
+
+      {/* --------------------------------------------------------------------------------------------------------- */}
+
 
     </div>
   );
