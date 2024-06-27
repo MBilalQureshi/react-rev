@@ -7,6 +7,7 @@ import EventClass from './components/EventClass';
 import EventFunctional from './components/EventFunctional';
 import FunctionalGreeting from './components/FunctionalGreeting';
 import HooksCounter from './components/HooksCounter';
+import LifeCyclesCDM from './components/LifeCyclesCDM';
 import MethodsAsPropsParent from './components/MethodsAsPropsParentClass';
 import NestingComponents from './components/NestingComponents';
 import RenderingLists from './components/RenderingLists';
@@ -46,7 +47,17 @@ function App() {
       {/* <RenderingLists /> */}
 
       {/*IMPORTANT: FOR UNDERSTANDING CYCLE OF componentDidMount, componentDidUpdate, componentWillUnmount */}
-      <Clock />
+      {/* <Clock /> */}
+
+      {/* componentDidMount
+      1. Parents's componentDid called after all the children are mounted
+
+      2. Parent's render will cause all it's children to re render too, which could slow app down!
+
+      3. There are ways to prevent child components from rendering, coming in later task
+       */}
+
+      <LifeCyclesCDM />
 
       
 
