@@ -9,6 +9,7 @@ import FunctionalGreeting from './components/FunctionalGreeting';
 import HooksCounter from './components/HooksCounter';
 import LifeCyclesCDM from './components/LifeCyclesCDM';
 import LifeCyclesCDU from './components/LifeCyclesCDU';
+import LifeCyclesCWU from './components/LifeCyclesCWU';
 import MethodsAsPropsParent from './components/MethodsAsPropsParentClass';
 import NestingComponents from './components/NestingComponents';
 import RenderingLists from './components/RenderingLists';
@@ -47,7 +48,7 @@ function App() {
       {/* Using MAP , keys and indexes(avoid it, x.map((y,index)=>{}))*/}
       {/* <RenderingLists /> */}
 
-      {/* --------------------------------------------------------------------------------------------------------- */}
+      {/* --------------------------------------------------3 MAIN COMPONENT LIFECYCLE METHODS ------------------------------------------------------- */}
 
       {/*IMPORTANT: FOR UNDERSTANDING CYCLE OF componentDidMount, componentDidUpdate, componentWillUnmount */}
       {/* <Clock /> */}
@@ -72,10 +73,20 @@ function App() {
       
       3. pass prevProps and prevState to componentDidUpdate to make conditional updates
       */}
-      <LifeCyclesCDU />
+      {/* <LifeCyclesCDU /> */}
+
+      {/* componentWillUnmount 
+      Clean up function expamles
+      - remove event listners
+      - reset intervals
+      - stop timers
+      - cancel network request
+      
+      */}
+      <LifeCyclesCWU />
 
       {/* --------------------------------------------------------------------------------------------------------- */}
-
+      
 
     </div>
   );
