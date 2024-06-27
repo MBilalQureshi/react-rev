@@ -3,6 +3,7 @@ import EventBinding from './components/BindingEvents';
 import Clock from './components/Clock';
 import ConditionalRenderingClass from './components/ConditionalRenderingClass';
 import ConditionalRenderingFunctional from './components/ConditionalRenderingFunctional';
+import ControlledForm from './components/ControlledForm';
 import EventClass from './components/EventClass';
 import EventFunctional from './components/EventFunctional';
 import FunctionalGreeting from './components/FunctionalGreeting';
@@ -83,10 +84,19 @@ function App() {
       - cancel network request
       
       */}
-      <LifeCyclesCWU />
+      {/* <LifeCyclesCWU /> */}
 
       {/* --------------------------------------------------------------------------------------------------------- */}
+
+      {/* Controlled components are the ones controlled by react state not DOM , FIELD CONTROLS AND SUBMISSION CONTROL TO REACT ONLY
       
+      How to create
+      1. create an input element with onChange attribute
+      2. write handler for the input's on chnage event
+      3. add a matching property in the state
+
+      */}
+      <ControlledForm />
 
     </div>
   );
