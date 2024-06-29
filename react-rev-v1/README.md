@@ -92,3 +92,15 @@ constructor(props){ // Within the constructor
 
 - As binding occurs within the constructor, we only have to bind ‘this’ once instead of every time it occurs. 
 - Good for performance in large applications.
+
+## React Refs
+Allow accessing DOM nodes or React elements created in the render method.
+## Used for variety of things:
+- Triggering imperative animations.
+- integrating with third-part DOM libraries
+- referencing values of uncontrolled components(we'll use this only for learning right now)
+### React refs in uncontrolled form
+There is no need for
+- react state
+- event handlers
+- state updates

@@ -18,6 +18,7 @@ import StatefulGreeting from './components/StatefulGreeting';
 import StatefulGreetingOne from './components/StatefulGreetingOne';
 import StatefulGreetingWithCallBack from './components/StatefulGreetingWithCallBack';
 import StatefulGreetingWithPrevState from './components/StatefulGreetingWithPrevState';
+import UncontrolledForm from './components/UncontrolledForm';
 
 function App() {
   return (
@@ -96,7 +97,10 @@ function App() {
       3. add a matching property in the state
 
       */}
-      <ControlledForm />
+      {/* <ControlledForm /> */}
+
+      {/* Uncontrolled Form, DOM will be managing changes now, we will use REFs here see Readme for more info */}
+      <UncontrolledForm />
 
     </div>
   );
