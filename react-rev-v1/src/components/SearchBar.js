@@ -11,10 +11,12 @@ export class SearchBar extends Component {
       }
     }
     handleChange = (event) => {
-        this.setState({
-            inputText: (event.target.value).toLowerCase(),
-            names: importedNames.filter(this.state.inputText)
-        })
+      const inputText = (event.target.value).toLowerCase()
+      const filteredNames = importedNames.filter(name => name.toLowerCase().includes(inputText))
+      this.setState({
+        // inputText: inputText,
+        names: filteredNames
+      })
     }
   render() {
     return (
