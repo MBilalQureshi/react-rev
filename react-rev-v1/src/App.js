@@ -14,6 +14,7 @@ import LifeCyclesCWU from './components/LifeCyclesCWU';
 import MethodsAsPropsParent from './components/MethodsAsPropsParentClass';
 import NestingComponents from './components/NestingComponents';
 import RenderingLists from './components/RenderingLists';
+import SearchBar from './components/SearchBar';
 import StatefulGreeting from './components/StatefulGreeting';
 import StatefulGreetingOne from './components/StatefulGreetingOne';
 import StatefulGreetingWithCallBack from './components/StatefulGreetingWithCallBack';
@@ -100,7 +101,11 @@ function App() {
       {/* <ControlledForm /> */}
 
       {/* Uncontrolled Form, DOM will be managing changes now, we will use REFs here see Readme for more info */}
-      <UncontrolledForm />
+      {/* <UncontrolledForm /> */}
+
+
+      {/* SEARCH-BAR CHALLENGE */}
+      <SearchBar />
 
     </div>
   );
