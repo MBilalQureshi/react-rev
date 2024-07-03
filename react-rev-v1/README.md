@@ -104,3 +104,21 @@ There is no need for
 - react state
 - event handlers
 - state updates
+
+## React hooks
+Built-in React functions which can be added to stateless functional components, allowing them to behave like stateful class components.
+- Example: useState, useEffect
+1. completely opt-in
+2. backward-compatible
+3. won't eliminate class components from React
+4. Simplify our code, no need for:
+    - State
+    - event handlers
+    - component lifecycle methods
+    - class components anf 'this'
+
+### useState hook
+is used to add state to functional components
+
+### useEffect hook
+replaces components lifecycle methods, componentDidMount, componentDidUpdate and componentWillUnmount
