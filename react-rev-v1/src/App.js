@@ -4,6 +4,7 @@ import Clock from './components/Clock';
 import ConditionalRenderingClass from './components/ConditionalRenderingClass';
 import ConditionalRenderingFunctional from './components/ConditionalRenderingFunctional';
 import ControlledForm from './components/ControlledForm';
+import ControlledFormHook from './components/ControlledFormHook';
 import EventClass from './components/EventClass';
 import EventFunctional from './components/EventFunctional';
 import FunctionalGreeting from './components/FunctionalGreeting';
@@ -104,9 +105,12 @@ function App() {
       {/* <UncontrolledForm /> */}
 
 
-      {/* SEARCH-BAR CHALLENGE */}
-      <SearchBar />
+      {/* SEARCH-BAR CHALLENGE - important*/}
+      {/* <SearchBar /> */}
 
+
+      {/* --------------------------------------------- HOOKS ------------------------------------------------------------------- */}
+      <ControlledFormHook />
     </div>
   );
 }
