@@ -21,6 +21,7 @@ import StatefulGreetingOne from './components/StatefulGreetingOne';
 import StatefulGreetingWithCallBack from './components/StatefulGreetingWithCallBack';
 import StatefulGreetingWithPrevState from './components/StatefulGreetingWithPrevState';
 import UncontrolledForm from './components/UncontrolledForm';
+import UseStateWithArrays from './components/UseStateWithArrays';
 
 function App() {
   return (
@@ -110,7 +111,17 @@ function App() {
 
 
       {/* --------------------------------------------- HOOKS ------------------------------------------------------------------- */}
-      <ControlledFormHook />
+      {/* UseState hook with controlled form */}
+      {/* <ControlledFormHook /> */}
+
+      {/* Part 1: UseState, arrays with spread operator and filter to add remove items*/}
+      <UseStateWithArrays />
+
+
+      {/* Part 2: Two other possible ways to use useState hook(arrays)
+          1. Updating objects in the state
+          2. Updating state based on previous State */}
+        
     </div>
   );
 }
