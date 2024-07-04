@@ -8,7 +8,7 @@ function UseEffectCounter() {
     // Effect should only run upon changes to relavent prop or state
 
     // useEffect();
-    //----------- 1. Runs after every render or we can say after every update to any state or prop, THIS HURTS PERFORMANCE ---------------
+    //------------------------- 1. Runs after every render or we can say after every update to any state or prop, THIS HURTS PERFORMANCE ---------------
     // useEffect(()=>{
     //     console.log('count 1 effect')
     //     document.title = `you clicked ${count} times`;
@@ -38,9 +38,16 @@ function UseEffectCounter() {
     useEffect(()=>{
         console.log('Creating timer effect')
         const interval = setInterval(()=>{
+            console.log("Interval executed");
             setTime(prevTime => prevTime + 1)
         },1000)
-    },[])
+
+        // 4 - CLEAN UP FUNCTION - even tough display is toggled to false, timer is still running, that's wjy we need to clear it in cleanup function done below
+        return ()=>{
+            console.log('Cleaning up timer effect')
+            clearInterval(interval)
+        }
+    },[]);
   return (
     <div>
         <button onClick={()=>setCount(counterOne => counterOne + 1)}>

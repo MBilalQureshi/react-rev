@@ -22,6 +22,7 @@ import StatefulGreetingWithCallBack from './components/StatefulGreetingWithCallB
 import StatefulGreetingWithPrevState from './components/StatefulGreetingWithPrevState';
 import UncontrolledForm from './components/UncontrolledForm';
 import UseEffectCounter from './components/UseEffectCounter';
+import UseEffectCounterContainer from './components/UseEffectCounterContainer';
 import UseStateWithArrays from './components/UseStateWithArrays';
 import UseStateWithObjects from './components/UseStateWithObjects';
 
@@ -135,7 +136,9 @@ function App() {
 
 
       {/* ------------ UseEffect hook ------------------- */}
-      <UseEffectCounter />
+      {/* <UseEffectCounter /> */}
+      {/* This will toggle display of UseEffectCounter component */}
+      <UseEffectCounterContainer />
       
 
 
