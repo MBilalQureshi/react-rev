@@ -7,7 +7,11 @@ export default function HooksCounter(props) {
         <h1>Hooks</h1>
         <h2>My name is {props.name}</h2>
         <h3>You clicked {count} times</h3>
-        <button onClick={()=> setCount(count123 => count123 + 1)}>Increment Counter</button>
+        {/* use arrow function (count would take prevValue)=> that would take previous value as parameter and make a count + 1 in it 
+        
+        Always pass a function to the setter function when updating state based on the previous state
+        */}
+        <button onClick={()=> setCount(count => count + 1)}>Increment Counter</button>
     </div>
   )
 }

@@ -22,6 +22,7 @@ import StatefulGreetingWithCallBack from './components/StatefulGreetingWithCallB
 import StatefulGreetingWithPrevState from './components/StatefulGreetingWithPrevState';
 import UncontrolledForm from './components/UncontrolledForm';
 import UseStateWithArrays from './components/UseStateWithArrays';
+import UseStateWithObjects from './components/UseStateWithObjects';
 
 function App() {
   return (
@@ -114,14 +115,19 @@ function App() {
       {/* UseState hook with controlled form */}
       {/* <ControlledFormHook /> */}
 
-      {/* Part 1: UseState, arrays with spread operator and filter to add remove items*/}
-      <UseStateWithArrays />
+      {/* Part 1: UseState, arrays with spread operator and filter to add remove items - IMPORTANT*/}
+      {/* <UseStateWithArrays /> */}
 
 
       {/* Part 2: Two other possible ways to use useState hook(arrays)
           1. Updating objects in the state
           2. Updating state based on previous State */}
-        
+      
+      {/* 1 - useState hook - Updating objects in the state - SPREAD OPERATOR - IMPORTANT*/}
+      <UseStateWithObjects />
+
+      {/* 2 - useState hook - Updating state based on previous State - Arrow fucntion to get prev value - IMPORTANT*/}
+      <HooksCounter name="Bilal" />
     </div>
   );
 }
