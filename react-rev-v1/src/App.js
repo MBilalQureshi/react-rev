@@ -21,6 +21,7 @@ import StatefulGreetingOne from './components/StatefulGreetingOne';
 import StatefulGreetingWithCallBack from './components/StatefulGreetingWithCallBack';
 import StatefulGreetingWithPrevState from './components/StatefulGreetingWithPrevState';
 import UncontrolledForm from './components/UncontrolledForm';
+import UseEffectCounter from './components/UseEffectCounter';
 import UseStateWithArrays from './components/UseStateWithArrays';
 import UseStateWithObjects from './components/UseStateWithObjects';
 
@@ -112,6 +113,9 @@ function App() {
 
 
       {/* --------------------------------------------- HOOKS ------------------------------------------------------------------- */}
+
+      {/* ------------ UseState hook ------------------- */}
+      
       {/* UseState hook with controlled form */}
       {/* <ControlledFormHook /> */}
 
@@ -124,10 +128,37 @@ function App() {
           2. Updating state based on previous State */}
       
       {/* 1 - useState hook - Updating objects in the state - SPREAD OPERATOR - IMPORTANT*/}
-      <UseStateWithObjects />
+      {/* <UseStateWithObjects /> */}
 
       {/* 2 - useState hook - Updating state based on previous State - Arrow fucntion to get prev value - IMPORTANT*/}
-      <HooksCounter name="Bilal" />
+      {/* <HooksCounter name="Bilal" /> */}
+
+
+      {/* ------------ UseEffect hook ------------------- */}
+      <UseEffectCounter />
+      
+
+
+
+
+      {/* ----------------------- *** Some Hooks for future learning *** ----------------------- */}
+      {/* ------------ UseContext hook ------------------- */}
+      {/* <UseContextHook /> */}
+
+      {/* ------------ UseReducer hook ------------------- */}
+      {/* <UseReducerHook /> */}
+
+      {/* ------------ UseRef hook ------------------- */}
+      {/* <UseRefHook /> */}
+
+      {/* ------------ UseMemo hook ------------------- */}
+      {/* <UseMemoHook /> */}
+
+      {/* ------------ UseCallback hook ------------------- */}
+      {/* <UseCallbackHook /> */}
+
+      {/* ------------ Custom hook ------------------- */}
+      {/* <CustomHook /> */}
     </div>
   );
 }
