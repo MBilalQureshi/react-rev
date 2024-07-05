@@ -131,3 +131,7 @@ replaces components lifecycle methods, componentDidMount, componentDidUpdate and
 2. jQuery's .ajax() method
 3. raw AJAX, namely XMLHttpRequest(XHR)
 4. an npm libary,i.e axios
+
+### Axios
+- must be in main project folder
+- npm install axios
