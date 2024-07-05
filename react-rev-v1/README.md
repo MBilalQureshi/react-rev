@@ -115,10 +115,19 @@ Built-in React functions which can be added to stateless functional components, 
     - State
     - event handlers
     - component lifecycle methods
-    - class components anf 'this'
+    - class components and 'this'
 
 ### useState hook
 is used to add state to functional components
 
 ### useEffect hook
 replaces components lifecycle methods, componentDidMount, componentDidUpdate and componentWillUnmount
+
+## HTTP and Data Fetching
+- React app can exist without backend
+- You should as what data is required for react app, what links, how would you login/out what protocol for it or what is needed as props and states. React just wants the data to act on it. What it has to render from prop and states.
+- React can make request via
+1. the browser fetch API
+2. jQuery's .ajax() method
+3. raw AJAX, namely XMLHttpRequest(XHR)
+4. an npm libary,i.e axios
