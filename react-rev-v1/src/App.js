@@ -8,6 +8,7 @@ import ControlledFormHook from './components/ControlledFormHook';
 import EventClass from './components/EventClass';
 import EventFunctional from './components/EventFunctional';
 import FunctionalGreeting from './components/FunctionalGreeting';
+import HTTPRequests from './components/HTTPRequests';
 import HooksCounter from './components/HooksCounter';
 import LifeCyclesCDM from './components/LifeCyclesCDM';
 import LifeCyclesCDU from './components/LifeCyclesCDU';
@@ -138,7 +139,7 @@ function App() {
       {/* ------------ UseEffect hook ------------------- */}
       {/* <UseEffectCounter /> */}
       {/* This will toggle display of UseEffectCounter component */}
-      <UseEffectCounterContainer />
+      {/* <UseEffectCounterContainer /> */}
       
 
 
@@ -162,6 +163,10 @@ function App() {
 
       {/* ------------ Custom hook ------------------- */}
       {/* <CustomHook /> */}
+
+
+      {/* ------------------------------------------------ HTTP REQUESTS and Data Fetching - AXIOS ------------------------------ */}
+      <HTTPRequests />
     </div>
   );
 }
