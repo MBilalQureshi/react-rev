@@ -1,4 +1,5 @@
 import './App.css';
+import HTTPHooks from './components/HTTPHooks';
 import EventBinding from './components/BindingEvents';
 import Clock from './components/Clock';
 import ConditionalRenderingClass from './components/ConditionalRenderingClass';
@@ -171,7 +172,10 @@ function App() {
       {/* <HTTPRequests /> */}
 
       {/* POST */}
-      <HTTPPost />
+      {/* <HTTPPost /> */}
+
+      {/* Get and Post using Hooks */}
+      <HTTPHooks />
     </div>
   );
 }
