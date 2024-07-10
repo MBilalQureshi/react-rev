@@ -8,6 +8,7 @@ import ControlledFormHook from './components/ControlledFormHook';
 import EventClass from './components/EventClass';
 import EventFunctional from './components/EventFunctional';
 import FunctionalGreeting from './components/FunctionalGreeting';
+import HTTPPost from './components/HTTPPost';
 import HTTPRequests from './components/HTTPRequests';
 import HooksCounter from './components/HooksCounter';
 import LifeCyclesCDM from './components/LifeCyclesCDM';
@@ -166,7 +167,11 @@ function App() {
 
 
       {/* ------------------------------------------------ HTTP REQUESTS and Data Fetching - AXIOS ------------------------------ */}
-      <HTTPRequests />
+      {/* GET */}
+      {/* <HTTPRequests /> */}
+
+      {/* POST */}
+      <HTTPPost />
     </div>
   );
 }
