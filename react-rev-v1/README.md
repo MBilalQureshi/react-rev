@@ -136,3 +136,7 @@ replaces components lifecycle methods, componentDidMount, componentDidUpdate and
 - must be in main project folder
 - npm install axios
 - https://jsonplaceholder.typicode.com/ Free fake and reliable API for testing and prototyping.
+
+## Two important links
+- https://www.npmjs.com/search?q=react
+- https://react.dev/reference/react/hooks
